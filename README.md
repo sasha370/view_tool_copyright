@@ -27,7 +27,7 @@ Put this code inside /helpers/application_helper.rb.
 
 ```ruby
   def copyright_generator
-    @copyright = CopyrightViewTool::Render.copyright "Karyakin Alex", "All my right reserved by universe"
+    @copyright = ViewToolCopyright::Render.copyright "Karyakin Alex", "All my right reserved by universe"
   end
 ```
 Your can change name and message as you want: 
