@@ -23,22 +23,19 @@ Or install it yourself as:
     $ gem install view_tool_copyright
 
 ## Usage
-Put this code inside application_controller.rb (or any controller/concern your need).
+Put this code inside /helpers/application_helper.rb.
 
-Your can change name and message as you want: 
-> CopyrightViewTool::Render.copyright( name, msg )
 ```
-  before_action :set_copyright
-
-  def set_copyright
+  def copyright_generator
     @copyright = CopyrightViewTool::Render.copyright "Karyakin Alex", "All my right reserved by universe"
   end
-
 ```
+Your can change name and message as you want: 
+> CopyrightViewTool::Render.copyright( name, msg )
 
 Then inside views/application.html.erb just put:
 ```
-<%= @copyright %>
+<%= copyright_generator %>
 ```
 
 ## Contributing
