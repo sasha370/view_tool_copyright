@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
 
   spec.summary       = %q{The easy way to add a &copy; Сopyright tag to your website on Rails}
   spec.description   = %q{Just add one line to your homepage }
-  spec.homepage      = "http://budka52.ru"
+  spec.homepage      = "https://github.com/sasha370/view_tool_copyright.git"
   spec.license       = "MIT"
   spec.required_ruby_version = Gem::Requirement.new(">= 2.3.0")
 
